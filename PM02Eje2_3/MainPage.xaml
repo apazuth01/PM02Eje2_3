@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02Eje2_3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkGreen" 
+               Padding="10" 
+               CornerRadius="0">
+            
+            <Label Text="Ejercicio 2.3 Agustin Paz Canales" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White"
+                   FontSize="28"/>
+        </Frame>
+
+        <Entry Placeholder="Descripcion" 
+               Margin="10,40,50,10" 
+               x:Name="txtdescripcion"/>
+        <Grid Margin="0,10,20,40">
+
+
+
+            <ImageButton Source="grabar.png" 
+                         Grid.Column="0" 
+                         Grid.Row="0"
+                         HorizontalOptions="Center" 
+                         VerticalOptions="CenterAndExpand" 
+                         WidthRequest="60" 
+                         HeightRequest="60" 
+                         BorderWidth="0"  
+                         Margin="-50,10,50,10"
+                         BorderColor="white" 
+                         BackgroundColor="Transparent"                         
+                         x:Name="B_Grabar" 
+                         Clicked="B_Grabar_Clicked"/>
+
+            <ImageButton Source="pausa.png" 
+                         Grid.Column="0" 
+                         Grid.Row="1"
+                         HorizontalOptions="Center" 
+                         VerticalOptions="CenterAndExpand" 
+                         WidthRequest="60" 
+                         HeightRequest="60" 
+                         BorderWidth="0"  
+                         BorderColor="white" 
+                         Margin="-50,10,50,10"
+                         BackgroundColor="Transparent"
+                         x:Name="B_Pausa" 
+                         Clicked="B_Pausa_Clicked"/>
+
+            <ImageButton Source="lista.png" 
+                         Grid.Column="1" 
+                         Grid.Row="4"
+                         HorizontalOptions="Center" 
+                         VerticalOptions="CenterAndExpand" 
+                         WidthRequest="70" 
+                         HeightRequest="60" 
+                         Margin="0,10,-120,10"
+                         BorderWidth="0"  
+                         BorderColor="white" 
+                         BackgroundColor="Transparent"
+                         x:Name="B_Ver" 
+                         Clicked="B_Ver_Clicked"/>
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
